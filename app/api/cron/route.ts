@@ -54,6 +54,8 @@ export async function GET(request: Request) {
           scrapedProduct,
           currentProduct
         );
+        console.log("hello");
+        console.log(scrapedProduct);
 
         if (emailNotifType && updatedProduct.users.length > 0) {
           const productInfo = {
